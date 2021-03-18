@@ -1,0 +1,34 @@
+.slider {
+    height: 700px;
+    &__textblock {
+        position: absolute;
+        top: 300px;
+        right: 200px;
+        h1 {
+            
+            font-size: 50px;
+            font-weight: 300;
+        }
+        .contact-btn {
+            width: 250px;
+            background-color: $primary-color;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover {
+                background-color: $color3;
+            }
+        }
+    }
+    &__imgblock {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
