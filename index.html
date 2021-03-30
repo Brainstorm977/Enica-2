@@ -7,9 +7,8 @@
         <meta name="description" content="Enica Express | Логистика, грузоперевозки, автоперевозки" />
         <meta name="robots" content="index,follow" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
         <title>Enica Express Rus | Логистика и грузоперевозки</title>
     </head>
 <body>
@@ -19,53 +18,164 @@
                 <img src="./img/enica-logo.png" alt="enica-logo">
             </div>
             <ul class="nav">
-                <li><a href="./">Главная</a></li>
-                <li><a href="./transport/">Услуги</a></li>
-                <li><a href="./routes/">Маршруты</a></li>
-                <li><a href="./cases/">Перевозки</a></li>
-                <li><a href="./survey/">Сюрвей</a></li>
-                <li><a href="./contact/">Контакты</a></li>
+                <!-- <li><a href="#">Главная</a></li> -->
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#routes">Маршруты</a></li>
+                <li><a href="#">Перевозки</a></li>
+                <li><a href="#">Сюрвей</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </header>
 
     <section class="slider">
+        <div class="slider__imgblock">
+            <img src="./img/321.jpg" alt="">
+        </div>
         <div class="container">
-            <div class="slider__textblock">
+            <!-- <div class="slider__textblock">
                 <h1>Мы помогаем. <br> Вы достигаете.</h1>
                 <div class="contact-btn">Свяжитесь с нами</div>
-            </div>
-            <div class="slider__imgblock">
-                <img src="./img/homepage-min.jpg" alt="">
-            </div>
+            </div> -->
+            
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
-            <h2 class="header">Наши услуги</h2>
+            <h2 class="header services__header">Наши <span>услуги</span></h2>
 
             <div class="services-wrapper">
                 <div class="services__items">
                     <div class="services__item">
-                        <img class="services__item_img" src="./img/1.png" alt="">
+                        <img class="services__item_img" src="./icons/int_log.png" alt="">
                         <div class="services__item_header">Международные автоперевозки</div>
                         <div class="services__item_descr">Международные автоперевозки по странам СНГ и Европы. <br> Свои тентованные и рефрижераторные автопоезда.</div>
+                        <div class="more"><a href="">Подробнее</a></div>
                     </div>
                     <div class="services__item">
-                        <img class="services__item_img" src="./img/2.png" alt="">
+                        <img class="services__item_img" src="./icons/in_log.png" alt="">
                         <div class="services__item_header">Локальные автоперевозки</div>
                         <div class="services__item_descr">Перевозки по Москве и Московской области. <br> Свой автопарк малотоннажных грузовых автомобилей.</div>
+                        <div class="more"><a href="">Подробнее</a></div>
                     </div>
                     <div class="services__item">
-                        <img class="services__item_img" src="./img/3.png" alt="">
+                        <img class="services__item_img" src="./icons/cbor.png" alt="">
                         <div class="services__item_header">Сборные грузы на Узбекистан</div>
                         <div class="services__item_descr">От одной евро-паллеты. <br> Короткие сроки.</div>
+                        <div class="more"><a href="">Подробнее</a></div>
                     </div>
                 </div>
             </div>
             
 
+        </div>
+    </section>
+
+    <section class="routes" id="routes">
+        <div class="container">
+            <h2 class="header routes__header">Наши <span>маршруты</span></h2>
+            <div class="routes__descr">
+                С 2013 года мы прорабатываем наиболее безопасные варианты международных перевозок для наших клиентов и партнеров.
+                <br><br>
+                За эти годы мы перевезли более 200 000 тонн грузов по нашим основным маршрутам.
+            </div>
+            <div class="routes__img">
+                <img src="./img/123.png" alt="route">
+            </div>
+            <div class="routes__items">
+                <div class="routes__item">
+                    <div class="routes__item_main">
+                        <img class="routes__item_main_img" src="./img/m-a-2.png" alt="moscow-almaty">
+                        <div class="routes__item_descr">
+                            <div class="routes__item_dist">
+                                <img src="./icons/navigation-10.svg" alt="" class="routes__item_dist_icon">
+                                <div>4000 км</div> 
+                            </div>
+                            <div class="routes__item_time">
+                                <img src="./icons/time-19.svg" alt="" class="routes__item_time_icon">
+                                5-7 дней в пути
+                            </div>
+                            <div class="routes__item_cities">Москва - Алматы</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="routes__item">
+                    <div class="routes__item_main">
+                        <img class="routes__item_main_img" src="./img/m-a-2.png" alt="tashkent-moscow">
+                        <div class="routes__item_descr">
+                            <div class="routes__item_dist">
+                                <img src="./icons/navigation-10.svg" alt="" class="routes__item_dist_icon">
+                                <div>3400 км</div> 
+                            </div>
+                            <div class="routes__item_time">
+                                <img src="./icons/time-19.svg" alt="" class="routes__item_time_icon">
+                                4-5 дней в пути
+                            </div>
+                            <div class="routes__item_cities">Ташкент - Москва</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="routes__item">
+                    <div class="routes__item_main">
+                        <img class="routes__item_main_img" src="./img/m-a-2.png" alt="nukus-moscow">
+                        <div class="routes__item_descr">
+                            <div class="routes__item_dist">
+                                <img src="./icons/navigation-10.svg" alt="" class="routes__item_dist_icon">
+                                <div>2700 км</div> 
+                            </div>
+                            <div class="routes__item_time">
+                                <img src="./icons/time-19.svg" alt="" class="routes__item_time_icon">
+                                3-4 дня в пути
+                            </div>
+                            <div class="routes__item_cities">Нукус - Москва</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="routes__item">
+                    <div class="routes__item_main">
+                        <img class="routes__item_main_img" src="./img/m-a-2.png" alt="fergana-moscow">
+                        <div class="routes__item_descr">
+                            <div class="routes__item_dist">
+                                <img src="./icons/navigation-10.svg" alt="" class="routes__item_dist_icon">
+                                <div>3700 км</div> 
+                            </div>
+                            <div class="routes__item_time">
+                                <img src="./icons/time-19.svg" alt="" class="routes__item_time_icon">
+                                5-7 дней в пути
+                            </div>
+                            <div class="routes__item_cities">Фергана - Москва</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <div class="clients-wrapper">
+                <div class="clients__text">
+                    <h3 class="clients__header"> > 200 000 тонн</h3>
+                    <div class="clients__descr">На настоящий момент доставлено свыше 200 000 тонн груза. Среди заказчиков – крупнейшие предприятия Евразии, а также новые начинающие бизнесы.</div>
+                </div>
+                <div class="clients__images">
+                    <img src="./img/sm.png" alt="" class="clients__img">
+                    <img src="./img/lg.png" alt="" class="clients__img">
+                    <img src="./img/x5.png" alt="" class="clients__img">
+                    <img src="./img/au.png" alt="" class="clients__img">
+                    <img src="./img/dilly.png" alt="" class="clients__img">
+                    <img src="./img/zap.png" alt="" class="clients__img">
+                    <img src="./img/lm.png" alt="" class="clients__img">
+                    <img src="./img/amaz.png" alt="" class="clients__img">
+                </div>
+            </div>
         </div>
     </section>
     

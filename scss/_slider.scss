@@ -1,5 +1,6 @@
 .slider {
     height: 700px;
+    overflow: hidden;
     &__textblock {
         position: absolute;
         top: 300px;
@@ -26,9 +27,26 @@
         }
     }
     &__imgblock {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+        width: 100%;
+        margin-top: -150px;
+        overflow: hidden;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // z-index: -1;
+        img {
+            // animation: slider 20s linear forwards;
+            width: 100%;
+        }
+        
+     }
+}
+
+@keyframes slider {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
     }
 }

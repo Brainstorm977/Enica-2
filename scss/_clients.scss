@@ -1,0 +1,43 @@
+.clients {
+
+    &-wrapper {
+        padding: 70px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        margin-left: 20px;
+        width: 300px;
+    }
+    &__header {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+
+    &__images {
+        max-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        img {
+            margin: 0 50px;
+            width: 100px;
+            margin: 20px 30px;
+            object-fit: contain;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
