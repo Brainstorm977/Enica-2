@@ -1,0 +1,66 @@
+.cases {
+    background-color: rgba($color: #e0e0e0, $alpha: 0.3);
+    padding: 70px 0px;
+
+    &__items {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+
+    }
+    &__item {
+        width: 320px;
+        height: 320px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        margin: 15px;
+        
+        &_img {
+            width: 100%;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            &__hover {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba($text-color, $alpha: 0.8);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: all 0.5s ease;
+                &_descr, &_route {
+                    width: 200px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    text-align: center;
+                    font-size: 18px;
+                    transition: all 0.5s ease;
+                }
+                &_descr {
+                    top: 40%;
+                    font-size: 22px;
+                }
+                &_route {
+                    top: 70%;
+                }
+                
+            }
+        }
+        &:hover {
+            .cases__item_img {
+                transform: scale(1);
+                &__hover {
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+
+    }
+
+}

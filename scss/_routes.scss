@@ -2,12 +2,7 @@
     padding: 100px 20px;
     position: relative;
     background-color: rgba($color: #e0e0e0, $alpha: 0.3);
-    &__header {
-        span {
-            text-transform: uppercase;
-            color: $primary-color;
-        }
-    }
+    
     &__descr {
         width: 40%;
         margin-top: 70px;
